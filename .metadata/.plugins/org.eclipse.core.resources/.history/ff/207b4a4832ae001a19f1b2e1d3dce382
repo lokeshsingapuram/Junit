@@ -1,0 +1,27 @@
+package com.tcs.helper;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
+import java.util.Arrays;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
+public class ArrayCompareTest {
+	
+	@Test
+	public void compareTwoArrays() {
+		int numbers[]= {1,67,23,2,4};
+		int expected[]= {1,2,4,23,67};
+		Arrays.sort(numbers);
+		assertArrayEquals(expected, numbers);
+		
+	}
+	@Test
+	public void performingException() {
+		int numbers[]= null;
+	Assertions.assertThrows(NullPointerException.class, null, "numbers array dont have numbers");
+		
+	}
+
+}

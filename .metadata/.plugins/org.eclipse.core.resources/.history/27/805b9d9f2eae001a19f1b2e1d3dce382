@@ -1,0 +1,23 @@
+package com.tcs.helper;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+public class BeforeAfterTest {
+	
+	@BeforeEach
+	public void beforTest() {
+		System.out.println("junit setup was initiated");
+		
+	}
+	@Test
+	public void test01() {
+		System.out.println("test executed");
+	}
+	@Test
+	public void test02() {
+		System.out.println("test executed");
+	}
+
+
+}

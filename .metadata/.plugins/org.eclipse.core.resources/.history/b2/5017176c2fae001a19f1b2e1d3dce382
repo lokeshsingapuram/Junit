@@ -1,0 +1,20 @@
+package com.tcs.helper;
+
+import org.junit.jupiter.api.Test;
+
+public class BeforeAfterClassAll {
+	
+	public static void beforeClass() {
+		StringHelper helper=new StringHelper();
+		System.out.println("helper class was initated"+helper.hashCode());
+	}
+	@Test
+	public void test01() {
+		System.out.println("test executed");
+	}
+	@Test
+	public void test02() {
+		System.out.println("test executed");
+	}
+
+}

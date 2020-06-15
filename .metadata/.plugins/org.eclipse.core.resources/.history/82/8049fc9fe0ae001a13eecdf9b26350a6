@@ -1,0 +1,20 @@
+package com.tcs.service;
+
+import static org.junit.Assert.assertNotNull;
+
+import org.easymock.EasyMock;
+import org.junit.Test;
+
+import com.tcs.dao.IContactDao;
+
+public class TestContactServiceImpl {
+	
+	@Test
+	public void testGetNameById() {
+		IContactDao daoProxy=EasyMock.createMock(IContactDao.class);
+	ContactService service=new ContactServiceImpl(daoProxy);
+	String name = service.getNameById(101);
+	assertNotNull(name);
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.tcs.dao;
+
+import java.util.List;
+
+public interface IContactDao {
+	
+	public String findNameById(Integer id);
+	public List<String> findAllNames();
+
+}

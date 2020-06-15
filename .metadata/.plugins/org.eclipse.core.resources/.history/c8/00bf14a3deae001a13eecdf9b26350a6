@@ -1,0 +1,13 @@
+package com.tcs.service;
+
+import com.tcs.dao.IContactDao;
+
+public class ContactServiceImpl implements ContactService{
+
+	private IContactDao contactDao;
+	@Override
+	public String getNameById(Integer id) {
+	String findNameById = contactDao.findNameById(id);
+
+}
+}

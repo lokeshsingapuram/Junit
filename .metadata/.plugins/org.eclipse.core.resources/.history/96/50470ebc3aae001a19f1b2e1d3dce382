@@ -1,0 +1,11 @@
+package com.tcs.helper;
+
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+import org.junit.runners.Suite.SuiteClasses;
+
+@RunWith()
+@SuiteClasses({ArrayCompareTest.class,BeforeAfterEachTest.class})
+public class AllTests {
+
+}

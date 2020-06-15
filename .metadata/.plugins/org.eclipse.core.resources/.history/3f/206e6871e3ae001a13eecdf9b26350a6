@@ -1,0 +1,43 @@
+package com.tcs.service;
+
+import static org.junit.Assert.assertNotNull;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.easymock.EasyMock;
+import org.junit.Test;
+
+import com.tcs.dao.IContactDao;
+
+public class TestContactServiceImpl {
+	
+	@Test
+	public void testGetNameById() {
+		//creating the mock
+		IContactDao daoProxy=EasyMock.createMock(IContactDao.class);
+		//setting the behavior to mock
+		EasyMock.expect(daoProxy.findNameById(101)).andReturn("Lokesh");
+		//saving the behavior
+		EasyMock.replay(daoProxy);
+	ContactServiceImpl service=new ContactServiceImpl(daoProxy);
+	String name = service.getNameById(101);
+	assertNotNull(name);
+	}
+	public void testGetAllContactNames() {
+		List<String> names=new ArrayList();
+		names.add("lokesh");
+		names.add("rajesh");
+		names.add("pavan");
+		//creating the mock
+	IContactDao daoProxy = EasyMock.createMock(IContactDao.class);
+	//setting the behavior
+	EasyMock.expect(daoProxy.findAllNames()).andReturn(names);
+	//saving the behaviour
+	EasyMock.replay(daoProxy);
+		ContactServiceImpl service=new ContactServiceImpl(daoProxy);
+		List<String> contactNames = service.getAllContactNames();
+		assertNotNull(contactNames);
+	}
+
+}

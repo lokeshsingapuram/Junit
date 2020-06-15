@@ -1,0 +1,8 @@
+package com.tcs.helper;
+
+import org.junit.runner.RunWith;
+
+@RunWi
+public class JunitAllTest {
+
+}

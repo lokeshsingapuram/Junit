@@ -1,0 +1,6 @@
+package com.tcs.service;
+
+public interface ContactService {
+	public String getNameById(String Integer);
+
+}

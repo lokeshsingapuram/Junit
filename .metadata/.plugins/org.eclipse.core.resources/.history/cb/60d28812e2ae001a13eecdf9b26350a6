@@ -1,0 +1,22 @@
+package com.tcs.service;
+
+import com.tcs.dao.IContactDao;
+
+public class ContactServiceImpl implements ContactService{
+
+	private IContactDao contactDao;
+	
+	public ContactServiceImpl(IContactDao contactDao) {
+		super();
+		this.contactDao = contactDao;
+	}
+
+	@Override
+	public String getNameById(Integer id) {
+	String name= contactDao.findNameById(id);
+	
+	String formattedName=name.toUpperCase();
+	System.out.println(formattedName);
+	return formattedName;
+}
+}

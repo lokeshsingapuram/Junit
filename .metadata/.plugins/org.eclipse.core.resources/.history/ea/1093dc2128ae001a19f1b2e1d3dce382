@@ -1,0 +1,24 @@
+package com.tcs.helper;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+public class StringHelperTest {
+	private StringHelper helper;
+	static {
+		 helper=new StringHelper();
+	}
+	
+	@Test
+	public void testReplaceAinFirstTwoCharacters_01() {
+		
+		
+		String actual = helper.replaceAinFirstTwoChars("AACD");
+		String expected="CD";
+		assertEquals(expected, actual);
+		assertEquals("BCD", helper.replaceAinFirstTwoChars("ABCD"));
+		
+	}
+
+}

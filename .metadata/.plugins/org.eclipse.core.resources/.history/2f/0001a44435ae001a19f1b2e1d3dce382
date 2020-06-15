@@ -1,0 +1,54 @@
+package com.tcs.helper;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
+import java.util.Arrays;
+import java.util.concurrent.TimeUnit;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
+
+public class ArrayCompareTest {
+	
+	@Test
+	public void compareTwoArrays() {
+		int numbers[]= {1,67,23,2,4};
+		int expected[]= {1,2,4,23,67};
+		Arrays.sort(numbers);
+		assertArrayEquals(expected, numbers);
+		
+	}
+	@Test
+	public void performingException() {
+		int numbers[]= null;
+		int numbers1[]= {1,2,3};
+	Assertions.assertNull(numbers);
+	Assertions.assertNotNull(numbers1);
+		
+	}
+	//handling exceptions
+	@Test
+	void testCase() {
+	 
+	    Assertions.assertThrows(Exception.class, () -> {
+	        throw new IllegalArgumentException("error message");
+	    });
+	}
+	//performance testing
+@Test
+@Timeout(value=100,unit =TimeUnit.MILLISECONDS )
+	public void performanceTesting() {
+	
+	for(int i=0;i<10;i++) {
+		try {
+			Thread.sleep(100000000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+		
+	}
+
+}

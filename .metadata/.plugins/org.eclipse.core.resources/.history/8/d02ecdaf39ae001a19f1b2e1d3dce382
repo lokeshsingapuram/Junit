@@ -1,0 +1,8 @@
+package com.tcs.helper;
+
+import org.junit.jupiter.api.DisplayName;
+
+@DisplayName(value = "passing parameters to our collection object")
+public class StringHelperParamertizeTestClass {
+
+}
