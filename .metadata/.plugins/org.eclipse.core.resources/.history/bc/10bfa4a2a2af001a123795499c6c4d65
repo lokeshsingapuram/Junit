@@ -1,0 +1,35 @@
+package com.tcs.services;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.print.DocFlavor.STRING;
+
+import org.easymock.EasyMock;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import com.tcs.dao.ToDoService;
+
+public class TestTodoBusinessServicesImpl {
+	private static ToDoBusinessServiceImpl service;
+	@BeforeClass
+	public void Init() {
+		List<String> user=new ArrayList();
+		user.add("Spring");
+		user.add("hibernate");
+		user.add("micro services");
+		ToDoService daoProxy= EasyMock.createMock(ToDoService.class);
+		EasyMock.expect(daoProxy.retriveTodos(user)).andReturn(user);
+		EasyMock.replay(daoProxy);
+		service.retriveTodosRelatedToSpring(daoProxy);
+		
+		
+	}
+	
+	@Test
+	public void testRetriveTodosRelatedToSpring() {
+		
+	}
+
+}
