@@ -48,6 +48,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="04-junitmockito"/>
 			<item value="03-junitMockitoApp"/>
 		</list>
 		<list key="projectNameTemplate">

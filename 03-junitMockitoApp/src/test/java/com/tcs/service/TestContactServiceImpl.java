@@ -1,6 +1,7 @@
 package com.tcs.service;
 
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,7 +30,9 @@ public class TestContactServiceImpl {
 				IContactDao daoProxy=EasyMock.createMock(IContactDao.class);
 				//setting the behavior to mock
 				EasyMock.expect(daoProxy.findNameById(101)).andReturn("Lokesh");
+				EasyMock.expect(daoProxy.findContactDetailsById(201)).andReturn(null);
 				EasyMock.expect(daoProxy.findAllNames()).andReturn(names);
+				EasyMock.expect(daoProxy.findAllNames()).andReturn(null);
 				EasyMock.expect(daoProxy.findContactDetailsById(100)).andReturn(contact);
 
 				EasyMock.replay(daoProxy);
@@ -42,19 +45,27 @@ public class TestContactServiceImpl {
 	assertNotNull(name);
 	}
 	@Test
-	public void testGetAllContactNames() {
+	public void testGetAllContactNames_01() {
 		List<String> contactNames = service.getAllContactNames();
 		assertNotNull(contactNames);
 	}
+
+	
+	  @Test() 
+	  public void testGetAllContactNames_02() {
+List<String> contactNames = service.getAllContactNames(); 
+	  assertNull(contactNames);
+	  }
+	 
 	@Test
-public void testGetContactdetails() {
+public void testGetContactdetails_01() {
 	Contact contactdetails = service.getContactdetails(100);
 	assertNotNull(contactdetails);
 }
 	@Test(expected = NoDataFoundException.class)
-	public void testGetContactdetails_negativeScenario() {
-		Contact contactdetails = service.getContactdetails(101);
-		assertNotNull(contactdetails);
+	public void testGetContactdetails_02() {
+		 service.getContactdetails(201);
 	}
-	
+
+
 }

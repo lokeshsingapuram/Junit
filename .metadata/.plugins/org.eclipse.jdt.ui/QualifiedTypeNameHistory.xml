@@ -21,14 +21,17 @@
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="com.tcs.service.ContactService"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.tcs.model.Contact"/>
 <fullyQualifiedTypeName name="com.tcs.dao.IContactDao"/>
-<fullyQualifiedTypeName name="org.easymock.EasyMock"/>
-<fullyQualifiedTypeName name="org.junit.Test"/>
 <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
-<fullyQualifiedTypeName name="org.junit.BeforeClass"/>
 <fullyQualifiedTypeName name="com.tcs.service.ContactServiceImpl"/>
+<fullyQualifiedTypeName name="org.junit.BeforeClass"/>
+<fullyQualifiedTypeName name="com.tcs.dao.ToDoService"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="javax.print.DocFlavor.STRING"/>
+<fullyQualifiedTypeName name="com.tcs.services.ToDoBusinessServiceImpl"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.tcs.exceptions.NoDataFoundException"/>
+<fullyQualifiedTypeName name="org.easymock.EasyMock"/>
 </qualifiedTypeNameHistroy>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TestingMockito" project="04-junitmockito" tests="3" started="3" failures="0" errors="0" ignored="0">
-  <testsuite name="com.tcs.services.TestingMockito" time="0.254">
-    <testcase name="testingMockito_01" classname="com.tcs.services.TestingMockito" time="0.251"/>
-    <testcase name="testingMockito_02" classname="com.tcs.services.TestingMockito" time="0.0"/>
-    <testcase name="testingMockito_03" classname="com.tcs.services.TestingMockito" time="0.003"/>
-  </testsuite>
-</testrun>

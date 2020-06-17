@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TestContactServiceImpl" project="03-junitMockitoApp" tests="4" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.tcs.service.TestContactServiceImpl" incomplete="true">
-    <testcase name="testGetContactdetails_negativeScenario" classname="com.tcs.service.TestContactServiceImpl" incomplete="true"/>
-    <testcase name="testGetNameById" classname="com.tcs.service.TestContactServiceImpl" incomplete="true"/>
-    <testcase name="testGetAllContactNames" classname="com.tcs.service.TestContactServiceImpl" incomplete="true"/>
-    <testcase name="testGetContactdetails" classname="com.tcs.service.TestContactServiceImpl" incomplete="true"/>
-  </testsuite>
-</testrun>

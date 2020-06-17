@@ -28,7 +28,7 @@ public class ContactServiceImpl implements ContactService{
 	public List<String> getAllContactNames() {
 	List<String> names=contactDao.findAllNames();
 	System.out.println(names);
-	if(!names.isEmpty()) {
+	if(names!=null&& names.size()>0) {
 		return names;
 	}
 		return null;
@@ -39,7 +39,7 @@ public class ContactServiceImpl implements ContactService{
 		Contact contact=contactDao.findContactDetailsById(id);
 		System.out.println(contact);
 		if(contact==null) {
-		throw new NoDataFoundException();
+		throw new NoDataFoundException("no data found");
 		}
 		return contact;
 		
