@@ -43,11 +43,13 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.tcs"/>
 			<item value="tcs"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="06-junit5mockitoApp"/>
 			<item value="04-junitmockito"/>
 			<item value="03-junitMockitoApp"/>
 		</list>

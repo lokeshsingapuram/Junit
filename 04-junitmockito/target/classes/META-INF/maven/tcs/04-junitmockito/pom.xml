@@ -2,7 +2,8 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>tcs</groupId>
   <artifactId>04-junitmockito</artifactId>
-  <version>0.0.1-SNAPSHOT</version> <build>
+  <version>0.0.1-SNAPSHOT</version> 
+  <build>
     <plugins>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
